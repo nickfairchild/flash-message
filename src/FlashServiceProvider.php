@@ -15,7 +15,7 @@ class FlashServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('flash', function () {
-            return $this->app->make('Flash\FlashMessage');
+            return $this->app->make('Nick\Flash\FlashMessage');
         });
     }
 
