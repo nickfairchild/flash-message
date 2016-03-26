@@ -1,7 +1,7 @@
 {
   "name": "nickfairchild/flash-message",
   "description": "Laravel Flash Messaging",
-  "licence": "MIT",
+  "license": "MIT",
   "authors": [
     {
       "name": "Nick Fairchild",
@@ -13,8 +13,8 @@
     "illuminate/support": "~5.0"
   },
   "autoload": {
-    "psr-0": {
-      "Nick\\Flash": "src/"
+    "psr-4": {
+      "Nick\\Flash\\": "src/"
     }
   },
   "minimum-stability": "stable"
