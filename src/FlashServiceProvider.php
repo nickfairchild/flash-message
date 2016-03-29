@@ -1,5 +1,4 @@
 <?php
-
 namespace Nick\Flash;
 
 use Illuminate\Support\ServiceProvider;
@@ -14,6 +13,11 @@ class FlashServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->bind(
+            'Nick\Flash\SessionStore',
+            'Nick\Flash\LaravelSessionStore'
+        );
+
         $this->app->singleton('flash', function () {
             return $this->app->make('Nick\Flash\FlashMessage');
         });

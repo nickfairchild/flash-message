@@ -1,5 +1,4 @@
 <?php
-
 namespace Nick\Flash\Facades;
 
 use Illuminate\Support\Facades\Facade;

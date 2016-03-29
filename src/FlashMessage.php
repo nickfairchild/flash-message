@@ -1,22 +1,16 @@
 <?php
-
 namespace Nick\Flash;
-
-use Illuminate\Contracts\Cache\Store;
 
 class FlashMessage
 {
-    /**
-     * @var \Illuminate\Contracts\Cache\Store
-     */
     private $session;
 
     /**
      * FlashMessage constructor.
      *
-     * @param \Illuminate\Contracts\Cache\Store $session
+     * @param \Nick\Flash\SessionStore $session
      */
-    public function __construct(Store $session)
+    public function __construct(SessionStore $session)
     {
         $this->session = $session;
     }
